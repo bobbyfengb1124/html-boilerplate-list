@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+body {
+  text-align: center;
+  background: #EDDDD4;
+  padding-top: 50px;
+}
+
+.button {
+  display: inline-block;
+  border: 0;
+  background: #197278;
+  padding: 15px 30px;
+  color: white;
+  font-family: "Lato", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 1.4px;
+  font-size: 18px;
+  border-radius: 6px;
+  text-shadow: 0 1px 2px #283D3B;
+  -webkit-animation: jiggle 2s infinite ease-in;
+          animation: jiggle 2s infinite ease-in;
+}
+
+@-webkit-keyframes jiggle {
+  45%, 65% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  55% {
+    -webkit-transform: scale(0.9, 1.1) translate(0, -5px);
+            transform: scale(0.9, 1.1) translate(0, -5px);
+  }
+  60% {
+    -webkit-transform: scale(1, 1) translate(0, -5px);
+            transform: scale(1, 1) translate(0, -5px);
+  }
+}
+
+@keyframes jiggle {
+  45%, 65% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  55% {
+    -webkit-transform: scale(0.9, 1.1) translate(0, -5px);
+            transform: scale(0.9, 1.1) translate(0, -5px);
+  }
+  60% {
+    -webkit-transform: scale(1, 1) translate(0, -5px);
+            transform: scale(1, 1) translate(0, -5px);
+  }
+}
