@@ -28,13 +28,3 @@ function findIndex(arr, callback) {
 
     return -1;
 }
-
-function tripleAndFilter(arr) {
-    return (arr) => {
-        arr.map(var => {
-            return var * 3;
-        }).filter(var => {
-            return var % 5 === 0;
-        });
-    }
-}
