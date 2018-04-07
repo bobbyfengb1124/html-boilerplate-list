@@ -52,8 +52,9 @@ function guessingGame(amount) {
     var completed = false;
 
     return function (guess) {
-        guesses++;
+        
         if (!completed) {
+            guesses++;
             if (answer === guess) {
                 completed = true;
                 return "You got it!";
@@ -70,5 +71,6 @@ function guessingGame(amount) {
                 }
             }
         }
+        return "You are all done playing!";
     };
 }
